@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>UpdatedTitle</title>
-    <!-- Add some CSS to change client UI -->
-    <style>
-    body {
-        background-color: #232F3E;
-        }
-    label, button {
-        color: #FF9900;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        margin-left: 40px;
-        }
-     input {
-        color: #232F3E;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        margin-left: 20px;
-        }
-    </style>
-    <script type="text/javascript" src="testScript.js"> </script>
-</head>
-<body>
-    <form>
-        <label>First Name :</label>
-        <input type="text" id="fName">
-        <label>Last Name :</label>
-        <input type="text" id="lName">
-        <!-- set button onClick method to call function we defined passing input values as parameters -->
-        <button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
-    </form>
-</body>
+
+  <head>
+    <title>My Website</title>
+  </head>
+  <body>
+    <h1>Welcome to My Website!</h1>
+    <p>Please use the buttons below to create or join a room:</p>
+    <button type="button">Create Room</button>
+    <br>
+    <br>
+    <label for="room-name">Room Name:</label>
+    <input type="text" id="room-name">
+    <button type="button">Join Room</button>
+  </body>
 </html>
